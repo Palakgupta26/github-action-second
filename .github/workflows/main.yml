@@ -1,0 +1,13 @@
+name: schedule job
+
+on:
+  schedule:
+    - cron: "55 19 * * *"
+
+jobs:
+  palak:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: disable
+        run : echo "hellooooo"
